@@ -1,0 +1,1450 @@
+Compiling 48 files with Solc 0.8.19
+Solc 0.8.19 finished in 2.55s
+Compiler run successful!
+Analysing contracts...
+Running tests...
+
+Ran 9 tests for test/unit/RaffleTest.t.sol:RaffleTest
+[PASS] testCheckUpkeepReturnsFalseIfEnoughTimeHasntPassed() (gas: 73408)
+[PASS] testCheckUpkeepReturnsFalseIfItHasNoBalance() (gas: 21129)
+[PASS] testCheckUpkeepReturnsFalseIfRaffleIsntOpen() (gas: 227451)
+[PASS] testCheckUpkeepReturnsTrueWhenParametersGood() (gas: 77085)
+[PASS] testDontAllowPlayersToEnterWhileRaffleIsCalculating() (gas: 230891)
+[PASS] testEmitsEventOnEntrance() (gas: 69585)
+[PASS] testRaffleInitializesInOpenState() (gas: 8014)
+[PASS] testRaffleRecordsPlayerWhenTheyEnter() (gas: 69306)
+[PASS] testRaffleRevertsWHenYouDontPayEnought() (gas: 11159)
+Suite result: ok. 9 passed; 0 failed; 0 skipped; finished in 466.46ms (4.16ms CPU time)
+
+Ran 1 test suite in 468.92ms (466.46ms CPU time): 9 tests passed, 0 failed, 0 skipped (9 total tests)
+Uncovered for script/DeployRaffle.s.sol:
+- Branch (branch: 0, path: 0) (location: source ID 42, line 15, chars 637-1238, hits: 0)
+- Line (location: source ID 42, line 16, chars 651-715, hits: 0)
+- Statement (location: source ID 42, line 16, chars 651-715, hits: 0)
+- Statement (location: source ID 42, line 16, chars 691-715, hits: 0)
+- Line (location: source ID 42, line 17, chars 729-922, hits: 0)
+- Statement (location: source ID 42, line 17, chars 729-922, hits: 0)
+- Line (location: source ID 42, line 24, chars 937-995, hits: 0)
+- Statement (location: source ID 42, line 24, chars 937-995, hits: 0)
+- Statement (location: source ID 42, line 24, chars 973-995, hits: 0)
+- Line (location: source ID 42, line 25, chars 1009-1167, hits: 0)
+- Statement (location: source ID 42, line 25, chars 1009-1167, hits: 0)
+- Line (location: source ID 42, line 31, chars 1182-1227, hits: 0)
+- Statement (location: source ID 42, line 31, chars 1182-1227, hits: 0)
+
+Uncovered for script/HelperConfig.s.sol:
+- Function "setConfig" (location: source ID 43, line 62, chars 2329-2486, hits: 0)
+- Line (location: source ID 43, line 66, chars 2440-2479, hits: 0)
+- Statement (location: source ID 43, line 66, chars 2440-2479, hits: 0)
+- Function "getConfigByChainId" (location: source ID 43, line 69, chars 2492-2886, hits: 0)
+- Branch (branch: 0, path: 0) (location: source ID 43, line 72, chars 2661-2716, hits: 0)
+- Branch (branch: 0, path: 1) (location: source ID 43, line 72, chars 2599-2818, hits: 0)
+- Line (location: source ID 43, line 73, chars 2675-2705, hits: 0)
+- Statement (location: source ID 43, line 73, chars 2675-2705, hits: 0)
+- Branch (branch: 1, path: 1) (location: source ID 43, line 74, chars 2722-2849, hits: 0)
+- Line (location: source ID 43, line 77, chars 2832-2869, hits: 0)
+- Statement (location: source ID 43, line 77, chars 2832-2869, hits: 0)
+- Function "getOrCreateAnvilEthConfig" (location: source ID 43, line 115, chars 4326-5898, hits: 0)
+
+Uncovered for script/Interactions.s.sol:
+- Function "createSubscriptionUsingConfig" (location: source ID 44, line 13, chars 532-972, hits: 0)
+- Line (location: source ID 44, line 14, chars 617-663, hits: 0)
+- Statement (location: source ID 44, line 14, chars 617-663, hits: 0)
+- Statement (location: source ID 44, line 14, chars 645-663, hits: 0)
+- Line (location: source ID 44, line 15, chars 673-793, hits: 0)
+- Statement (location: source ID 44, line 15, chars 673-793, hits: 0)
+- Line (location: source ID 44, line 21, chars 920-965, hits: 0)
+- Statement (location: source ID 44, line 21, chars 920-965, hits: 0)
+- Statement (location: source ID 44, line 21, chars 927-965, hits: 0)
+- Function "createSubscription" (location: source ID 44, line 24, chars 978-1502, hits: 0)
+- Line (location: source ID 44, line 27, chars 1092-1156, hits: 0)
+- Statement (location: source ID 44, line 27, chars 1092-1156, hits: 0)
+- Line (location: source ID 44, line 28, chars 1166-1185, hits: 0)
+- Statement (location: source ID 44, line 28, chars 1166-1185, hits: 0)
+- Line (location: source ID 44, line 29, chars 1195-1287, hits: 0)
+- Statement (location: source ID 44, line 29, chars 1195-1287, hits: 0)
+- Statement (location: source ID 44, line 29, chars 1211-1287, hits: 0)
+- Line (location: source ID 44, line 31, chars 1297-1315, hits: 0)
+- Statement (location: source ID 44, line 31, chars 1297-1315, hits: 0)
+- Line (location: source ID 44, line 32, chars 1325-1372, hits: 0)
+- Statement (location: source ID 44, line 32, chars 1325-1372, hits: 0)
+- Line (location: source ID 44, line 33, chars 1382-1451, hits: 0)
+- Statement (location: source ID 44, line 33, chars 1382-1451, hits: 0)
+- Line (location: source ID 44, line 34, chars 1461-1495, hits: 0)
+- Statement (location: source ID 44, line 34, chars 1461-1495, hits: 0)
+- Function "run" (location: source ID 44, line 37, chars 1508-1614, hits: 0)
+- Line (location: source ID 44, line 38, chars 1569-1607, hits: 0)
+- Statement (location: source ID 44, line 38, chars 1569-1607, hits: 0)
+- Statement (location: source ID 44, line 38, chars 1576-1607, hits: 0)
+- Function "addConsumerUsingConfig" (location: source ID 44, line 59, chars 2157-2596, hits: 0)
+- Line (location: source ID 44, line 60, chars 2236-2282, hits: 0)
+- Statement (location: source ID 44, line 60, chars 2236-2282, hits: 0)
+- Statement (location: source ID 44, line 60, chars 2264-2282, hits: 0)
+- Line (location: source ID 44, line 61, chars 2292-2347, hits: 0)
+- Statement (location: source ID 44, line 61, chars 2292-2347, hits: 0)
+- Line (location: source ID 44, line 62, chars 2357-2455, hits: 0)
+- Statement (location: source ID 44, line 62, chars 2357-2455, hits: 0)
+- Line (location: source ID 44, line 67, chars 2529-2589, hits: 0)
+- Statement (location: source ID 44, line 67, chars 2529-2589, hits: 0)
+- Function "run" (location: source ID 44, line 70, chars 2602-2825, hits: 0)
+- Line (location: source ID 44, line 71, chars 2636-2764, hits: 0)
+- Statement (location: source ID 44, line 71, chars 2636-2764, hits: 0)
+- Statement (location: source ID 44, line 71, chars 2667-2764, hits: 0)
+- Line (location: source ID 44, line 75, chars 2774-2818, hits: 0)
+- Statement (location: source ID 44, line 75, chars 2774-2818, hits: 0)
+- Function "fundSubscriptionUsingConfig" (location: source ID 44, line 82, chars 2937-3829, hits: 0)
+- Line (location: source ID 44, line 83, chars 2993-3039, hits: 0)
+- Statement (location: source ID 44, line 83, chars 2993-3039, hits: 0)
+- Statement (location: source ID 44, line 83, chars 3021-3039, hits: 0)
+- Line (location: source ID 44, line 84, chars 3049-3104, hits: 0)
+- Statement (location: source ID 44, line 84, chars 3049-3104, hits: 0)
+- Line (location: source ID 44, line 85, chars 3114-3212, hits: 0)
+- Statement (location: source ID 44, line 85, chars 3114-3212, hits: 0)
+- Line (location: source ID 44, line 88, chars 3222-3266, hits: 0)
+- Statement (location: source ID 44, line 88, chars 3222-3266, hits: 0)
+- Line (location: source ID 44, line 91, chars 3344-3354, hits: 0)
+- Statement (location: source ID 44, line 91, chars 3344-3354, hits: 0)
+- Branch (branch: 0, path: 0) (location: source ID 44, line 91, chars 3356-3763, hits: 0)
+- Line (location: source ID 44, line 92, chars 3370-3425, hits: 0)
+- Statement (location: source ID 44, line 92, chars 3370-3425, hits: 0)
+- Statement (location: source ID 44, line 92, chars 3401-3425, hits: 0)
+- Line (location: source ID 44, line 93, chars 3439-3501, hits: 0)
+- Statement (location: source ID 44, line 93, chars 3439-3501, hits: 0)
+- Statement (location: source ID 44, line 93, chars 3486-3501, hits: 0)
+- Line (location: source ID 44, line 94, chars 3515-3535, hits: 0)
+- Statement (location: source ID 44, line 94, chars 3515-3535, hits: 0)
+- Line (location: source ID 44, line 95, chars 3549-3582, hits: 0)
+- Statement (location: source ID 44, line 95, chars 3549-3582, hits: 0)
+- Line (location: source ID 44, line 96, chars 3596-3752, hits: 0)
+- Statement (location: source ID 44, line 96, chars 3596-3752, hits: 0)
+- Line (location: source ID 44, line 104, chars 3773-3822, hits: 0)
+- Statement (location: source ID 44, line 104, chars 3773-3822, hits: 0)
+- Function "fundSubscription" (location: source ID 44, line 107, chars 3835-4890, hits: 0)
+- Line (location: source ID 44, line 112, chars 3965-4009, hits: 0)
+- Statement (location: source ID 44, line 112, chars 3965-4009, hits: 0)
+- Line (location: source ID 44, line 113, chars 4019-4076, hits: 0)
+- Statement (location: source ID 44, line 113, chars 4019-4076, hits: 0)
+- Line (location: source ID 44, line 114, chars 4086-4128, hits: 0)
+- Statement (location: source ID 44, line 114, chars 4086-4128, hits: 0)
+- Line (location: source ID 44, line 115, chars 4142-4173, hits: 0)
+- Statement (location: source ID 44, line 115, chars 4142-4173, hits: 0)
+- Branch (branch: 1, path: 0) (location: source ID 44, line 115, chars 4175-4435, hits: 0)
+- Branch (branch: 1, path: 1) (location: source ID 44, line 115, chars 4138-4847, hits: 0)
+- Line (location: source ID 44, line 117, chars 4234-4253, hits: 0)
+- Statement (location: source ID 44, line 117, chars 4234-4253, hits: 0)
+- Line (location: source ID 44, line 118, chars 4267-4392, hits: 0)
+- Statement (location: source ID 44, line 118, chars 4267-4392, hits: 0)
+- Line (location: source ID 44, line 122, chars 4406-4424, hits: 0)
+- Statement (location: source ID 44, line 122, chars 4406-4424, hits: 0)
+- Line (location: source ID 44, line 124, chars 4455-4505, hits: 0)
+- Statement (location: source ID 44, line 124, chars 4455-4505, hits: 0)
+- Line (location: source ID 44, line 125, chars 4519-4542, hits: 0)
+- Statement (location: source ID 44, line 125, chars 4519-4542, hits: 0)
+- Line (location: source ID 44, line 126, chars 4556-4609, hits: 0)
+- Statement (location: source ID 44, line 126, chars 4556-4609, hits: 0)
+- Line (location: source ID 44, line 127, chars 4623-4649, hits: 0)
+- Statement (location: source ID 44, line 127, chars 4623-4649, hits: 0)
+- Line (location: source ID 44, line 128, chars 4663-4682, hits: 0)
+- Statement (location: source ID 44, line 128, chars 4663-4682, hits: 0)
+- Line (location: source ID 44, line 129, chars 4696-4841, hits: 0)
+- Statement (location: source ID 44, line 129, chars 4696-4841, hits: 0)
+- Line (location: source ID 44, line 134, chars 4855-4873, hits: 0)
+- Statement (location: source ID 44, line 134, chars 4855-4873, hits: 0)
+- Function "run" (location: source ID 44, line 138, chars 4896-4966, hits: 0)
+- Line (location: source ID 44, line 139, chars 4930-4959, hits: 0)
+- Statement (location: source ID 44, line 139, chars 4930-4959, hits: 0)
+
+Uncovered for src/Raffle.sol:
+- Branch (branch: 2, path: 0) (location: source ID 45, line 143, chars 4713-4895, hits: 0)
+- Line (location: source ID 45, line 144, chars 4727-4884, hits: 0)
+- Statement (location: source ID 45, line 144, chars 4727-4884, hits: 0)
+- Function "fulfillRandomWords" (location: source ID 45, line 175, chars 5853-6715, hits: 0)
+- Line (location: source ID 45, line 185, chars 6168-6225, hits: 0)
+- Statement (location: source ID 45, line 185, chars 6168-6225, hits: 0)
+- Statement (location: source ID 45, line 185, chars 6192-6225, hits: 0)
+- Line (location: source ID 45, line 186, chars 6235-6290, hits: 0)
+- Statement (location: source ID 45, line 186, chars 6235-6290, hits: 0)
+- Line (location: source ID 45, line 187, chars 6300-6329, hits: 0)
+- Statement (location: source ID 45, line 187, chars 6300-6329, hits: 0)
+- Line (location: source ID 45, line 188, chars 6339-6375, hits: 0)
+- Statement (location: source ID 45, line 188, chars 6339-6375, hits: 0)
+- Line (location: source ID 45, line 189, chars 6385-6417, hits: 0)
+- Statement (location: source ID 45, line 189, chars 6385-6417, hits: 0)
+- Line (location: source ID 45, line 190, chars 6427-6460, hits: 0)
+- Statement (location: source ID 45, line 190, chars 6427-6460, hits: 0)
+- Line (location: source ID 45, line 191, chars 6470-6501, hits: 0)
+- Statement (location: source ID 45, line 191, chars 6470-6501, hits: 0)
+- Line (location: source ID 45, line 192, chars 6511-6581, hits: 0)
+- Statement (location: source ID 45, line 192, chars 6511-6581, hits: 0)
+- Statement (location: source ID 45, line 192, chars 6530-6581, hits: 0)
+- Line (location: source ID 45, line 194, chars 6643-6651, hits: 0)
+- Statement (location: source ID 45, line 194, chars 6643-6651, hits: 0)
+- Branch (branch: 3, path: 0) (location: source ID 45, line 194, chars 6653-6709, hits: 0)
+- Line (location: source ID 45, line 195, chars 6667-6698, hits: 0)
+- Statement (location: source ID 45, line 195, chars 6667-6698, hits: 0)
+- Function "getNumWords" (location: source ID 45, line 206, chars 6864-6950, hits: 0)
+- Line (location: source ID 45, line 207, chars 6927-6943, hits: 0)
+- Statement (location: source ID 45, line 207, chars 6927-6943, hits: 0)
+- Function "getRequestConfirmations" (location: source ID 45, line 210, chars 6956-7066, hits: 0)
+- Line (location: source ID 45, line 211, chars 7031-7059, hits: 0)
+- Statement (location: source ID 45, line 211, chars 7031-7059, hits: 0)
+- Function "getRecentWinner" (location: source ID 45, line 214, chars 7072-7167, hits: 0)
+- Line (location: source ID 45, line 215, chars 7139-7160, hits: 0)
+- Statement (location: source ID 45, line 215, chars 7139-7160, hits: 0)
+- Function "getLastTimeStamp" (location: source ID 45, line 222, chars 7283-7380, hits: 0)
+- Line (location: source ID 45, line 223, chars 7351-7373, hits: 0)
+- Statement (location: source ID 45, line 223, chars 7351-7373, hits: 0)
+- Function "getInterval" (location: source ID 45, line 226, chars 7386-7473, hits: 0)
+- Line (location: source ID 45, line 227, chars 7449-7466, hits: 0)
+- Statement (location: source ID 45, line 227, chars 7449-7466, hits: 0)
+- Function "getEntranceFee" (location: source ID 45, line 230, chars 7479-7572, hits: 0)
+- Line (location: source ID 45, line 231, chars 7545-7565, hits: 0)
+- Statement (location: source ID 45, line 231, chars 7545-7565, hits: 0)
+- Function "getNumberOfPlayers" (location: source ID 45, line 234, chars 7578-7678, hits: 0)
+- Line (location: source ID 45, line 235, chars 7648-7671, hits: 0)
+- Statement (location: source ID 45, line 235, chars 7648-7671, hits: 0)
+
+Uncovered for test/mocks/LinkToken.sol:
+- Function "mint" (location: source ID 46, line 19, chars 529-610, hits: 0)
+- Line (location: source ID 46, line 20, chars 587-603, hits: 0)
+- Statement (location: source ID 46, line 20, chars 587-603, hits: 0)
+- Function "transferAndCall" (location: source ID 46, line 31, chars 995-1376, hits: 0)
+- Line (location: source ID 46, line 32, chars 1117-1144, hits: 0)
+- Statement (location: source ID 46, line 32, chars 1117-1144, hits: 0)
+- Line (location: source ID 46, line 34, chars 1212-1257, hits: 0)
+- Statement (location: source ID 46, line 34, chars 1212-1257, hits: 0)
+- Line (location: source ID 46, line 35, chars 1271-1286, hits: 0)
+- Statement (location: source ID 46, line 35, chars 1271-1286, hits: 0)
+- Branch (branch: 0, path: 0) (location: source ID 46, line 35, chars 1288-1349, hits: 0)
+- Line (location: source ID 46, line 36, chars 1302-1338, hits: 0)
+- Statement (location: source ID 46, line 36, chars 1302-1338, hits: 0)
+- Line (location: source ID 46, line 38, chars 1358-1369, hits: 0)
+- Statement (location: source ID 46, line 38, chars 1358-1369, hits: 0)
+- Function "contractFallback" (location: source ID 46, line 43, chars 1398-1604, hits: 0)
+- Line (location: source ID 46, line 44, chars 1491-1536, hits: 0)
+- Statement (location: source ID 46, line 44, chars 1491-1536, hits: 0)
+- Line (location: source ID 46, line 45, chars 1546-1597, hits: 0)
+- Statement (location: source ID 46, line 45, chars 1546-1597, hits: 0)
+- Function "isContract" (location: source ID 46, line 48, chars 1610-1809, hits: 0)
+- Line (location: source ID 46, line 49, chars 1691-1705, hits: 0)
+- Statement (location: source ID 46, line 49, chars 1691-1705, hits: 0)
+- Line (location: source ID 46, line 51, chars 1738-1766, hits: 0)
+- Statement (location: source ID 46, line 51, chars 1738-1766, hits: 0)
+- Line (location: source ID 46, line 53, chars 1785-1802, hits: 0)
+- Statement (location: source ID 46, line 53, chars 1785-1802, hits: 0)
+- Statement (location: source ID 46, line 53, chars 1792-1802, hits: 0)
+
+Anchors for Contract "IERC721Metadata" (solc 0.8.19, source ID 34):
+
+Anchors for Contract "IERC721" (solc 0.8.19, source ID 34):
+
+Anchors for Contract "StdStyle" (solc 0.8.19, source ID 25):
+
+Anchors for Contract "LinkTokenInterface" (solc 0.8.19, source ID 6):
+
+Anchors for Contract "FundSubscription" (solc 0.8.19, source ID 44):
+- IC 267 -> Item 171
+- Creation code
+  - Refers to item: Function "fundSubscriptionUsingConfig" (location: source ID 44, line 82, chars 2937-3829, hits: 0)
+- IC 1917 -> Item 172
+- Creation code
+  - Refers to item: Line (location: source ID 44, line 83, chars 2993-3039, hits: 0)
+- IC 1917 -> Item 173
+- Creation code
+  - Refers to item: Statement (location: source ID 44, line 83, chars 2993-3039, hits: 0)
+- IC 1919 -> Item 174
+- Creation code
+  - Refers to item: Statement (location: source ID 44, line 83, chars 3021-3039, hits: 0)
+- IC 1965 -> Item 175
+- Creation code
+  - Refers to item: Line (location: source ID 44, line 84, chars 3049-3104, hits: 0)
+- IC 1965 -> Item 176
+- Creation code
+  - Refers to item: Statement (location: source ID 44, line 84, chars 3049-3104, hits: 0)
+- IC 2089 -> Item 177
+- Creation code
+  - Refers to item: Line (location: source ID 44, line 85, chars 3114-3212, hits: 0)
+- IC 2089 -> Item 178
+- Creation code
+  - Refers to item: Statement (location: source ID 44, line 85, chars 3114-3212, hits: 0)
+- IC 2213 -> Item 179
+- Creation code
+  - Refers to item: Line (location: source ID 44, line 88, chars 3222-3266, hits: 0)
+- IC 2213 -> Item 180
+- Creation code
+  - Refers to item: Statement (location: source ID 44, line 88, chars 3222-3266, hits: 0)
+- IC 2337 -> Item 181
+- Creation code
+  - Refers to item: Line (location: source ID 44, line 91, chars 3344-3354, hits: 0)
+- IC 2337 -> Item 182
+- Creation code
+  - Refers to item: Statement (location: source ID 44, line 91, chars 3344-3354, hits: 0)
+- IC 2346 -> Item 183
+- Creation code
+  - Refers to item: Branch (branch: 0, path: 0) (location: source ID 44, line 91, chars 3356-3763, hits: 0)
+- IC 2346 -> Item 184
+- Creation code
+  - Refers to item: Line (location: source ID 44, line 92, chars 3370-3425, hits: 0)
+- IC 2346 -> Item 185
+- Creation code
+  - Refers to item: Statement (location: source ID 44, line 92, chars 3370-3425, hits: 0)
+- IC 2348 -> Item 186
+- Creation code
+  - Refers to item: Statement (location: source ID 44, line 92, chars 3401-3425, hits: 0)
+- IC 2394 -> Item 187
+- Creation code
+  - Refers to item: Line (location: source ID 44, line 93, chars 3439-3501, hits: 0)
+- IC 2394 -> Item 188
+- Creation code
+  - Refers to item: Statement (location: source ID 44, line 93, chars 3439-3501, hits: 0)
+- IC 2397 -> Item 189
+- Creation code
+  - Refers to item: Statement (location: source ID 44, line 93, chars 3486-3501, hits: 0)
+- IC 2516 -> Item 190
+- Creation code
+  - Refers to item: Line (location: source ID 44, line 94, chars 3515-3535, hits: 0)
+- IC 2516 -> Item 191
+- Creation code
+  - Refers to item: Statement (location: source ID 44, line 94, chars 3515-3535, hits: 0)
+- IC 2519 -> Item 192
+- Creation code
+  - Refers to item: Line (location: source ID 44, line 95, chars 3549-3582, hits: 0)
+- IC 2519 -> Item 193
+- Creation code
+  - Refers to item: Statement (location: source ID 44, line 95, chars 3549-3582, hits: 0)
+- IC 2522 -> Item 194
+- Creation code
+  - Refers to item: Line (location: source ID 44, line 96, chars 3596-3752, hits: 0)
+- IC 2522 -> Item 195
+- Creation code
+  - Refers to item: Statement (location: source ID 44, line 96, chars 3596-3752, hits: 0)
+- IC 2646 -> Item 196
+- Creation code
+  - Refers to item: Line (location: source ID 44, line 104, chars 3773-3822, hits: 0)
+- IC 2646 -> Item 197
+- Creation code
+  - Refers to item: Statement (location: source ID 44, line 104, chars 3773-3822, hits: 0)
+- IC 235 -> Item 198
+- Creation code
+  - Refers to item: Function "fundSubscription" (location: source ID 44, line 107, chars 3835-4890, hits: 0)
+- IC 576 -> Item 199
+- Creation code
+  - Refers to item: Line (location: source ID 44, line 112, chars 3965-4009, hits: 0)
+- IC 576 -> Item 200
+- Creation code
+  - Refers to item: Statement (location: source ID 44, line 112, chars 3965-4009, hits: 0)
+- IC 641 -> Item 201
+- Creation code
+  - Refers to item: Line (location: source ID 44, line 113, chars 4019-4076, hits: 0)
+- IC 641 -> Item 202
+- Creation code
+  - Refers to item: Statement (location: source ID 44, line 113, chars 4019-4076, hits: 0)
+- IC 706 -> Item 203
+- Creation code
+  - Refers to item: Line (location: source ID 44, line 114, chars 4086-4128, hits: 0)
+- IC 706 -> Item 204
+- Creation code
+  - Refers to item: Statement (location: source ID 44, line 114, chars 4086-4128, hits: 0)
+- IC 774 -> Item 205
+- Creation code
+  - Refers to item: Line (location: source ID 44, line 115, chars 4142-4173, hits: 0)
+- IC 774 -> Item 206
+- Creation code
+  - Refers to item: Statement (location: source ID 44, line 115, chars 4142-4173, hits: 0)
+- IC 817 -> Item 207
+- Creation code
+  - Refers to item: Branch (branch: 1, path: 0) (location: source ID 44, line 115, chars 4175-4435, hits: 0)
+- IC 1738 -> Item 208
+- Creation code
+  - Refers to item: Branch (branch: 1, path: 1) (location: source ID 44, line 115, chars 4138-4847, hits: 0)
+- IC 817 -> Item 209
+- Creation code
+  - Refers to item: Line (location: source ID 44, line 117, chars 4234-4253, hits: 0)
+- IC 817 -> Item 210
+- Creation code
+  - Refers to item: Statement (location: source ID 44, line 117, chars 4234-4253, hits: 0)
+- IC 914 -> Item 211
+- Creation code
+  - Refers to item: Line (location: source ID 44, line 118, chars 4267-4392, hits: 0)
+- IC 914 -> Item 212
+- Creation code
+  - Refers to item: Statement (location: source ID 44, line 118, chars 4267-4392, hits: 0)
+- IC 1071 -> Item 213
+- Creation code
+  - Refers to item: Line (location: source ID 44, line 122, chars 4406-4424, hits: 0)
+- IC 1071 -> Item 214
+- Creation code
+  - Refers to item: Statement (location: source ID 44, line 122, chars 4406-4424, hits: 0)
+- IC 1174 -> Item 215
+- Creation code
+  - Refers to item: Line (location: source ID 44, line 124, chars 4455-4505, hits: 0)
+- IC 1174 -> Item 216
+- Creation code
+  - Refers to item: Statement (location: source ID 44, line 124, chars 4455-4505, hits: 0)
+- IC 1311 -> Item 217
+- Creation code
+  - Refers to item: Line (location: source ID 44, line 125, chars 4519-4542, hits: 0)
+- IC 1311 -> Item 218
+- Creation code
+  - Refers to item: Statement (location: source ID 44, line 125, chars 4519-4542, hits: 0)
+- IC 1322 -> Item 219
+- Creation code
+  - Refers to item: Line (location: source ID 44, line 126, chars 4556-4609, hits: 0)
+- IC 1322 -> Item 220
+- Creation code
+  - Refers to item: Statement (location: source ID 44, line 126, chars 4556-4609, hits: 0)
+- IC 1459 -> Item 221
+- Creation code
+  - Refers to item: Line (location: source ID 44, line 127, chars 4623-4649, hits: 0)
+- IC 1459 -> Item 222
+- Creation code
+  - Refers to item: Statement (location: source ID 44, line 127, chars 4623-4649, hits: 0)
+- IC 1506 -> Item 223
+- Creation code
+  - Refers to item: Line (location: source ID 44, line 128, chars 4663-4682, hits: 0)
+- IC 1506 -> Item 224
+- Creation code
+  - Refers to item: Statement (location: source ID 44, line 128, chars 4663-4682, hits: 0)
+- IC 1603 -> Item 225
+- Creation code
+  - Refers to item: Line (location: source ID 44, line 129, chars 4696-4841, hits: 0)
+- IC 1603 -> Item 226
+- Creation code
+  - Refers to item: Statement (location: source ID 44, line 129, chars 4696-4841, hits: 0)
+- IC 1814 -> Item 227
+- Creation code
+  - Refers to item: Line (location: source ID 44, line 134, chars 4855-4873, hits: 0)
+- IC 1814 -> Item 228
+- Creation code
+  - Refers to item: Statement (location: source ID 44, line 134, chars 4855-4873, hits: 0)
+- IC 449 -> Item 229
+- Creation code
+  - Refers to item: Function "run" (location: source ID 44, line 138, chars 4896-4966, hits: 0)
+- IC 2752 -> Item 230
+- Creation code
+  - Refers to item: Line (location: source ID 44, line 139, chars 4930-4959, hits: 0)
+- IC 2752 -> Item 231
+- Creation code
+  - Refers to item: Statement (location: source ID 44, line 139, chars 4930-4959, hits: 0)
+
+Anchors for Contract "ERC677Receiver" (solc 0.8.19, source ID 46):
+
+Anchors for Contract "LinkToken" (solc 0.8.19, source ID 46):
+- IC 5 -> Item 327
+- Runtime code
+  - Refers to item: Function "" (location: source ID 46, line 15, chars 422-523, hits: 9)
+- IC 213 -> Item 328
+- Runtime code
+  - Refers to item: Line (location: source ID 46, line 16, chars 483-516, hits: 9)
+- IC 213 -> Item 329
+- Runtime code
+  - Refers to item: Statement (location: source ID 46, line 16, chars 483-516, hits: 9)
+- IC 544 -> Item 330
+- Creation code
+  - Refers to item: Function "mint" (location: source ID 46, line 19, chars 529-610, hits: 0)
+- IC 2117 -> Item 331
+- Creation code
+  - Refers to item: Line (location: source ID 46, line 20, chars 587-603, hits: 0)
+- IC 2117 -> Item 332
+- Creation code
+  - Refers to item: Statement (location: source ID 46, line 20, chars 587-603, hits: 0)
+- IC 496 -> Item 333
+- Creation code
+  - Refers to item: Function "transferAndCall" (location: source ID 46, line 31, chars 995-1376, hits: 0)
+- IC 1966 -> Item 334
+- Creation code
+  - Refers to item: Line (location: source ID 46, line 32, chars 1117-1144, hits: 0)
+- IC 1966 -> Item 335
+- Creation code
+  - Refers to item: Statement (location: source ID 46, line 32, chars 1117-1144, hits: 0)
+- IC 1977 -> Item 336
+- Creation code
+  - Refers to item: Line (location: source ID 46, line 34, chars 1212-1257, hits: 0)
+- IC 1977 -> Item 337
+- Creation code
+  - Refers to item: Statement (location: source ID 46, line 34, chars 1212-1257, hits: 0)
+- IC 2080 -> Item 338
+- Creation code
+  - Refers to item: Line (location: source ID 46, line 35, chars 1271-1286, hits: 0)
+- IC 2080 -> Item 339
+- Creation code
+  - Refers to item: Statement (location: source ID 46, line 35, chars 1271-1286, hits: 0)
+- IC 2094 -> Item 340
+- Creation code
+  - Refers to item: Branch (branch: 0, path: 0) (location: source ID 46, line 35, chars 1288-1349, hits: 0)
+- IC 2094 -> Item 341
+- Creation code
+  - Refers to item: Line (location: source ID 46, line 36, chars 1302-1338, hits: 0)
+- IC 2094 -> Item 342
+- Creation code
+  - Refers to item: Statement (location: source ID 46, line 36, chars 1302-1338, hits: 0)
+- IC 2106 -> Item 343
+- Creation code
+  - Refers to item: Line (location: source ID 46, line 38, chars 1358-1369, hits: 0)
+- IC 2106 -> Item 344
+- Creation code
+  - Refers to item: Statement (location: source ID 46, line 38, chars 1358-1369, hits: 0)
+- IC 3559 -> Item 345
+- Creation code
+  - Refers to item: Function "contractFallback" (location: source ID 46, line 43, chars 1398-1604, hits: 0)
+- IC 3560 -> Item 346
+- Creation code
+  - Refers to item: Line (location: source ID 46, line 44, chars 1491-1536, hits: 0)
+- IC 3560 -> Item 347
+- Creation code
+  - Refers to item: Statement (location: source ID 46, line 44, chars 1491-1536, hits: 0)
+- IC 3565 -> Item 348
+- Creation code
+  - Refers to item: Line (location: source ID 46, line 45, chars 1546-1597, hits: 0)
+- IC 3565 -> Item 349
+- Creation code
+  - Refers to item: Statement (location: source ID 46, line 45, chars 1546-1597, hits: 0)
+- IC 3540 -> Item 350
+- Creation code
+  - Refers to item: Function "isContract" (location: source ID 46, line 48, chars 1610-1809, hits: 0)
+- IC 3543 -> Item 351
+- Creation code
+  - Refers to item: Line (location: source ID 46, line 49, chars 1691-1705, hits: 0)
+- IC 3543 -> Item 352
+- Creation code
+  - Refers to item: Statement (location: source ID 46, line 49, chars 1691-1705, hits: 0)
+- IC 3544 -> Item 353
+- Creation code
+  - Refers to item: Line (location: source ID 46, line 51, chars 1738-1766, hits: 0)
+- IC 3544 -> Item 354
+- Creation code
+  - Refers to item: Statement (location: source ID 46, line 51, chars 1738-1766, hits: 0)
+- IC 3548 -> Item 355
+- Creation code
+  - Refers to item: Line (location: source ID 46, line 53, chars 1785-1802, hits: 0)
+- IC 3548 -> Item 356
+- Creation code
+  - Refers to item: Statement (location: source ID 46, line 53, chars 1785-1802, hits: 0)
+- IC 3548 -> Item 357
+- Creation code
+  - Refers to item: Statement (location: source ID 46, line 53, chars 1792-1802, hits: 0)
+
+Anchors for Contract "ERC20" (solc 0.8.19, source ID 41):
+
+Anchors for Contract "TestBase" (solc 0.8.19, source ID 15):
+
+Anchors for Contract "VmSafe" (solc 0.8.19, source ID 29):
+
+Anchors for Contract "RaffleTest" (solc 0.8.19, source ID 47):
+
+Anchors for Contract "IERC721TokenReceiver" (solc 0.8.19, source ID 34):
+
+Anchors for Contract "IERC20" (solc 0.8.19, source ID 33):
+
+Anchors for Contract "HelperConfig" (solc 0.8.19, source ID 43):
+- IC 264 -> Item 268
+- Runtime code
+  - Refers to item: Function "" (location: source ID 43, line 52, chars 1992-2201, hits: 9)
+- IC 278 -> Item 269
+- Runtime code
+  - Refers to item: Line (location: source ID 43, line 53, chars 2016-2076, hits: 9)
+- IC 278 -> Item 270
+- Runtime code
+  - Refers to item: Statement (location: source ID 43, line 53, chars 2016-2076, hits: 9)
+- IC 540 -> Item 271
+- Runtime code
+  - Refers to item: Line (location: source ID 43, line 54, chars 2086-2146, hits: 9)
+- IC 540 -> Item 272
+- Runtime code
+  - Refers to item: Statement (location: source ID 43, line 54, chars 2086-2146, hits: 9)
+- IC 1008 -> Item 296
+- Runtime code
+  - Refers to item: Function "getMainnetEthConfig" (location: source ID 43, line 81, chars 2892-3603, hits: 9)
+- IC 1019 -> Item 297
+- Runtime code
+  - Refers to item: Line (location: source ID 43, line 86, chars 3025-3596, hits: 9)
+- IC 1019 -> Item 298
+- Runtime code
+  - Refers to item: Statement (location: source ID 43, line 86, chars 3025-3596, hits: 9)
+- IC 805 -> Item 299
+- Runtime code
+  - Refers to item: Function "getSepoliaEthConfig" (location: source ID 43, line 98, chars 3609-4320, hits: 9)
+- IC 816 -> Item 300
+- Runtime code
+  - Refers to item: Line (location: source ID 43, line 103, chars 3742-4313, hits: 9)
+- IC 816 -> Item 301
+- Runtime code
+  - Refers to item: Statement (location: source ID 43, line 103, chars 3742-4313, hits: 9)
+- IC 709 -> Item 273
+- Creation code
+  - Refers to item: Function "getConfig" (location: source ID 43, line 58, chars 2207-2323, hits: 18)
+- IC 3794 -> Item 274
+- Creation code
+  - Refers to item: Line (location: source ID 43, line 59, chars 2276-2316, hits: 18)
+- IC 3794 -> Item 275
+- Creation code
+  - Refers to item: Statement (location: source ID 43, line 59, chars 2276-2316, hits: 18)
+- IC 3794 -> Item 276
+- Creation code
+  - Refers to item: Statement (location: source ID 43, line 59, chars 2283-2316, hits: 18)
+- IC 373 -> Item 277
+- Creation code
+  - Refers to item: Function "setConfig" (location: source ID 43, line 62, chars 2329-2486, hits: 0)
+- IC 2972 -> Item 278
+- Creation code
+  - Refers to item: Line (location: source ID 43, line 66, chars 2440-2479, hits: 0)
+- IC 2972 -> Item 279
+- Creation code
+  - Refers to item: Statement (location: source ID 43, line 66, chars 2440-2479, hits: 0)
+- IC 319 -> Item 280
+- Creation code
+  - Refers to item: Function "getConfigByChainId" (location: source ID 43, line 69, chars 2492-2886, hits: 0)
+- IC 2494 -> Item 281
+- Creation code
+  - Refers to item: Line (location: source ID 43, line 72, chars 2603-2659, hits: 18)
+- IC 2494 -> Item 282
+- Creation code
+  - Refers to item: Statement (location: source ID 43, line 72, chars 2603-2659, hits: 18)
+- IC 2601 -> Item 283
+- Creation code
+  - Refers to item: Branch (branch: 0, path: 0) (location: source ID 43, line 72, chars 2661-2716, hits: 0)
+- IC 2916 -> Item 284
+- Creation code
+  - Refers to item: Branch (branch: 0, path: 1) (location: source ID 43, line 72, chars 2599-2818, hits: 0)
+- IC 2601 -> Item 285
+- Creation code
+  - Refers to item: Line (location: source ID 43, line 73, chars 2675-2705, hits: 0)
+- IC 2601 -> Item 286
+- Creation code
+  - Refers to item: Statement (location: source ID 43, line 73, chars 2675-2705, hits: 0)
+- IC 2892 -> Item 287
+- Creation code
+  - Refers to item: Line (location: source ID 43, line 74, chars 2726-2751, hits: 18)
+- IC 2892 -> Item 288
+- Creation code
+  - Refers to item: Statement (location: source ID 43, line 74, chars 2726-2751, hits: 18)
+- IC 2899 -> Item 289
+- Creation code
+  - Refers to item: Branch (branch: 1, path: 0) (location: source ID 43, line 74, chars 2753-2812, hits: 18)
+- IC 2916 -> Item 290
+- Creation code
+  - Refers to item: Branch (branch: 1, path: 1) (location: source ID 43, line 74, chars 2722-2849, hits: 0)
+- IC 2899 -> Item 291
+- Creation code
+  - Refers to item: Line (location: source ID 43, line 75, chars 2767-2801, hits: 18)
+- IC 2899 -> Item 292
+- Creation code
+  - Refers to item: Statement (location: source ID 43, line 75, chars 2767-2801, hits: 18)
+- IC 2899 -> Item 293
+- Creation code
+  - Refers to item: Statement (location: source ID 43, line 75, chars 2774-2801, hits: 18)
+- IC 2917 -> Item 294
+- Creation code
+  - Refers to item: Line (location: source ID 43, line 77, chars 2832-2869, hits: 0)
+- IC 2917 -> Item 295
+- Creation code
+  - Refers to item: Statement (location: source ID 43, line 77, chars 2832-2869, hits: 0)
+- IC 405 -> Item 296
+- Creation code
+  - Refers to item: Function "getMainnetEthConfig" (location: source ID 43, line 81, chars 2892-3603, hits: 9)
+- IC 3230 -> Item 297
+- Creation code
+  - Refers to item: Line (location: source ID 43, line 86, chars 3025-3596, hits: 9)
+- IC 3230 -> Item 298
+- Creation code
+  - Refers to item: Statement (location: source ID 43, line 86, chars 3025-3596, hits: 9)
+- IC 811 -> Item 299
+- Creation code
+  - Refers to item: Function "getSepoliaEthConfig" (location: source ID 43, line 98, chars 3609-4320, hits: 9)
+- IC 3853 -> Item 300
+- Creation code
+  - Refers to item: Line (location: source ID 43, line 103, chars 3742-4313, hits: 9)
+- IC 3853 -> Item 301
+- Creation code
+  - Refers to item: Statement (location: source ID 43, line 103, chars 3742-4313, hits: 9)
+- IC 285 -> Item 302
+- Creation code
+  - Refers to item: Function "getOrCreateAnvilEthConfig" (location: source ID 43, line 115, chars 4326-5898, hits: 0)
+- IC 890 -> Item 303
+- Creation code
+  - Refers to item: Line (location: source ID 43, line 117, chars 4474-4525, hits: 18)
+- IC 890 -> Item 304
+- Creation code
+  - Refers to item: Statement (location: source ID 43, line 117, chars 4474-4525, hits: 18)
+- IC 980 -> Item 305
+- Creation code
+  - Refers to item: Branch (branch: 2, path: 0) (location: source ID 43, line 117, chars 4527-4577, hits: 9)
+- IC 980 -> Item 306
+- Creation code
+  - Refers to item: Line (location: source ID 43, line 118, chars 4541-4566, hits: 9)
+- IC 980 -> Item 307
+- Creation code
+  - Refers to item: Statement (location: source ID 43, line 118, chars 4541-4566, hits: 9)
+- IC 1251 -> Item 308
+- Creation code
+  - Refers to item: Line (location: source ID 43, line 121, chars 4587-4642, hits: 9)
+- IC 1251 -> Item 309
+- Creation code
+  - Refers to item: Statement (location: source ID 43, line 121, chars 4587-4642, hits: 9)
+- IC 1323 -> Item 310
+- Creation code
+  - Refers to item: Line (location: source ID 43, line 123, chars 4738-4757, hits: 9)
+- IC 1323 -> Item 311
+- Creation code
+  - Refers to item: Statement (location: source ID 43, line 123, chars 4738-4757, hits: 9)
+- IC 1420 -> Item 312
+- Creation code
+  - Refers to item: Line (location: source ID 43, line 124, chars 4767-4963, hits: 9)
+- IC 1420 -> Item 313
+- Creation code
+  - Refers to item: Statement (location: source ID 43, line 124, chars 4767-4963, hits: 9)
+- IC 1422 -> Item 314
+- Creation code
+  - Refers to item: Statement (location: source ID 43, line 124, chars 4815-4963, hits: 9)
+- IC 1538 -> Item 315
+- Creation code
+  - Refers to item: Line (location: source ID 43, line 129, chars 4973-5005, hits: 9)
+- IC 1538 -> Item 316
+- Creation code
+  - Refers to item: Statement (location: source ID 43, line 129, chars 4973-5005, hits: 9)
+- IC 1540 -> Item 317
+- Creation code
+  - Refers to item: Statement (location: source ID 43, line 129, chars 4990-5005, hits: 9)
+- IC 1586 -> Item 318
+- Creation code
+  - Refers to item: Line (location: source ID 43, line 130, chars 5015-5083, hits: 9)
+- IC 1586 -> Item 319
+- Creation code
+  - Refers to item: Statement (location: source ID 43, line 130, chars 5015-5083, hits: 9)
+- IC 1588 -> Item 320
+- Creation code
+  - Refers to item: Statement (location: source ID 43, line 130, chars 5040-5083, hits: 9)
+- IC 1742 -> Item 321
+- Creation code
+  - Refers to item: Line (location: source ID 43, line 131, chars 5093-5111, hits: 9)
+- IC 1742 -> Item 322
+- Creation code
+  - Refers to item: Statement (location: source ID 43, line 131, chars 5093-5111, hits: 9)
+- IC 1839 -> Item 323
+- Creation code
+  - Refers to item: Line (location: source ID 43, line 133, chars 5122-5681, hits: 9)
+- IC 1839 -> Item 324
+- Creation code
+  - Refers to item: Statement (location: source ID 43, line 133, chars 5122-5681, hits: 9)
+- IC 2212 -> Item 325
+- Creation code
+  - Refers to item: Line (location: source ID 43, line 146, chars 5866-5891, hits: 9)
+- IC 2212 -> Item 326
+- Creation code
+  - Refers to item: Statement (location: source ID 43, line 146, chars 5866-5891, hits: 9)
+
+Anchors for Contract "IERC677Receiver" (solc 0.8.19, source ID 4):
+
+Anchors for Contract "EnumerableSet" (solc 0.8.19, source ID 7):
+
+Anchors for Contract "StdAssertions" (solc 0.8.19, source ID 17):
+
+Anchors for Contract "stdStorage" (solc 0.8.19, source ID 24):
+
+Anchors for Contract "ConfirmedOwnerWithProposal" (solc 0.8.19, source ID 2):
+
+Anchors for Contract "StdInvariant" (solc 0.8.19, source ID 21):
+
+Anchors for Contract "IVRFMigratableConsumerV2Plus" (solc 0.8.19, source ID 11):
+
+Anchors for Contract "MockERC20" (solc 0.8.19, source ID 36):
+
+Anchors for Contract "StdCheatsSafe" (solc 0.8.19, source ID 19):
+
+Anchors for Contract "IERC721TokenReceiver" (solc 0.8.19, source ID 37):
+
+Anchors for Contract "IERC721Enumerable" (solc 0.8.19, source ID 34):
+
+Anchors for Contract "AutomationCompatibleInterface" (solc 0.8.19, source ID 0):
+
+Anchors for Contract "SubscriptionAPI" (solc 0.8.19, source ID 8):
+
+Anchors for Contract "CommonBase" (solc 0.8.19, source ID 15):
+
+Anchors for Contract "Script" (solc 0.8.19, source ID 16):
+
+Anchors for Contract "stdMath" (solc 0.8.19, source ID 23):
+
+Anchors for Contract "MockERC721" (solc 0.8.19, source ID 37):
+
+Anchors for Contract "StdCheats" (solc 0.8.19, source ID 19):
+
+Anchors for Contract "DevOpsTools" (solc 0.8.19, source ID 39):
+
+Anchors for Contract "IMulticall3" (solc 0.8.19, source ID 35):
+
+Anchors for Contract "ConfirmedOwner" (solc 0.8.19, source ID 1):
+
+Anchors for Contract "IVRFSubscriptionV2Plus" (solc 0.8.19, source ID 12):
+
+Anchors for Contract "stdError" (solc 0.8.19, source ID 20):
+
+Anchors for Contract "CreateSubscription" (solc 0.8.19, source ID 44):
+- IC 122 -> Item 113
+- Creation code
+  - Refers to item: Function "createSubscriptionUsingConfig" (location: source ID 44, line 13, chars 532-972, hits: 0)
+- IC 271 -> Item 114
+- Creation code
+  - Refers to item: Line (location: source ID 44, line 14, chars 617-663, hits: 0)
+- IC 271 -> Item 115
+- Creation code
+  - Refers to item: Statement (location: source ID 44, line 14, chars 617-663, hits: 0)
+- IC 273 -> Item 116
+- Creation code
+  - Refers to item: Statement (location: source ID 44, line 14, chars 645-663, hits: 0)
+- IC 319 -> Item 117
+- Creation code
+  - Refers to item: Line (location: source ID 44, line 15, chars 673-793, hits: 0)
+- IC 319 -> Item 118
+- Creation code
+  - Refers to item: Statement (location: source ID 44, line 15, chars 673-793, hits: 0)
+- IC 456 -> Item 119
+- Creation code
+  - Refers to item: Line (location: source ID 44, line 21, chars 920-965, hits: 0)
+- IC 456 -> Item 120
+- Creation code
+  - Refers to item: Statement (location: source ID 44, line 21, chars 920-965, hits: 0)
+- IC 456 -> Item 121
+- Creation code
+  - Refers to item: Statement (location: source ID 44, line 21, chars 927-965, hits: 0)
+- IC 157 -> Item 122
+- Creation code
+  - Refers to item: Function "createSubscription" (location: source ID 44, line 24, chars 978-1502, hits: 0)
+- IC 480 -> Item 123
+- Creation code
+  - Refers to item: Line (location: source ID 44, line 27, chars 1092-1156, hits: 0)
+- IC 480 -> Item 124
+- Creation code
+  - Refers to item: Statement (location: source ID 44, line 27, chars 1092-1156, hits: 0)
+- IC 553 -> Item 125
+- Creation code
+  - Refers to item: Line (location: source ID 44, line 28, chars 1166-1185, hits: 0)
+- IC 553 -> Item 126
+- Creation code
+  - Refers to item: Statement (location: source ID 44, line 28, chars 1166-1185, hits: 0)
+- IC 650 -> Item 127
+- Creation code
+  - Refers to item: Line (location: source ID 44, line 29, chars 1195-1287, hits: 0)
+- IC 650 -> Item 128
+- Creation code
+  - Refers to item: Statement (location: source ID 44, line 29, chars 1195-1287, hits: 0)
+- IC 652 -> Item 129
+- Creation code
+  - Refers to item: Statement (location: source ID 44, line 29, chars 1211-1287, hits: 0)
+- IC 806 -> Item 130
+- Creation code
+  - Refers to item: Line (location: source ID 44, line 31, chars 1297-1315, hits: 0)
+- IC 806 -> Item 131
+- Creation code
+  - Refers to item: Statement (location: source ID 44, line 31, chars 1297-1315, hits: 0)
+- IC 903 -> Item 132
+- Creation code
+  - Refers to item: Line (location: source ID 44, line 32, chars 1325-1372, hits: 0)
+- IC 903 -> Item 133
+- Creation code
+  - Refers to item: Statement (location: source ID 44, line 32, chars 1325-1372, hits: 0)
+- IC 968 -> Item 134
+- Creation code
+  - Refers to item: Line (location: source ID 44, line 33, chars 1382-1451, hits: 0)
+- IC 968 -> Item 135
+- Creation code
+  - Refers to item: Statement (location: source ID 44, line 33, chars 1382-1451, hits: 0)
+- IC 1004 -> Item 136
+- Creation code
+  - Refers to item: Line (location: source ID 44, line 34, chars 1461-1495, hits: 0)
+- IC 1004 -> Item 137
+- Creation code
+  - Refers to item: Statement (location: source ID 44, line 34, chars 1461-1495, hits: 0)
+- IC 87 -> Item 138
+- Creation code
+  - Refers to item: Function "run" (location: source ID 44, line 37, chars 1508-1614, hits: 0)
+- IC 250 -> Item 139
+- Creation code
+  - Refers to item: Line (location: source ID 44, line 38, chars 1569-1607, hits: 0)
+- IC 250 -> Item 140
+- Creation code
+  - Refers to item: Statement (location: source ID 44, line 38, chars 1569-1607, hits: 0)
+- IC 250 -> Item 141
+- Creation code
+  - Refers to item: Statement (location: source ID 44, line 38, chars 1576-1607, hits: 0)
+
+Anchors for Contract "Vm" (solc 0.8.19, source ID 29):
+
+Anchors for Contract "AggregatorV3Interface" (solc 0.8.19, source ID 3):
+
+Anchors for Contract "VRFV2PlusClient" (solc 0.8.19, source ID 13):
+
+Anchors for Contract "stdJson" (solc 0.8.19, source ID 22):
+
+Anchors for Contract "stdStorageSafe" (solc 0.8.19, source ID 24):
+
+Anchors for Contract "IVRFCoordinatorV2Plus" (solc 0.8.19, source ID 10):
+
+Anchors for Contract "Test" (solc 0.8.19, source ID 28):
+
+Anchors for Contract "stdToml" (solc 0.8.19, source ID 26):
+
+Anchors for Contract "StringUtils" (solc 0.8.19, source ID 40):
+
+Anchors for Contract "IERC165" (solc 0.8.19, source ID 32):
+
+Anchors for Contract "console2" (solc 0.8.19, source ID 31):
+
+Anchors for Contract "AddConsumer" (solc 0.8.19, source ID 44):
+- IC 87 -> Item 142
+- Creation code
+  - Refers to item: Function "addConsumer" (location: source ID 44, line 43, chars 1655-2151, hits: 9)
+- IC 198 -> Item 143
+- Creation code
+  - Refers to item: Line (location: source ID 44, line 48, chars 1790-1851, hits: 9)
+- IC 198 -> Item 144
+- Creation code
+  - Refers to item: Statement (location: source ID 44, line 48, chars 1790-1851, hits: 9)
+- IC 263 -> Item 145
+- Creation code
+  - Refers to item: Line (location: source ID 44, line 49, chars 1861-1914, hits: 9)
+- IC 263 -> Item 146
+- Creation code
+  - Refers to item: Statement (location: source ID 44, line 49, chars 1861-1914, hits: 9)
+- IC 328 -> Item 147
+- Creation code
+  - Refers to item: Line (location: source ID 44, line 50, chars 1924-1966, hits: 9)
+- IC 328 -> Item 148
+- Creation code
+  - Refers to item: Statement (location: source ID 44, line 50, chars 1924-1966, hits: 9)
+- IC 429 -> Item 149
+- Creation code
+  - Refers to item: Line (location: source ID 44, line 51, chars 1976-1995, hits: 9)
+- IC 429 -> Item 150
+- Creation code
+  - Refers to item: Statement (location: source ID 44, line 51, chars 1976-1995, hits: 9)
+- IC 526 -> Item 151
+- Creation code
+  - Refers to item: Line (location: source ID 44, line 52, chars 2005-2116, hits: 9)
+- IC 526 -> Item 152
+- Creation code
+  - Refers to item: Statement (location: source ID 44, line 52, chars 2005-2116, hits: 9)
+- IC 675 -> Item 153
+- Creation code
+  - Refers to item: Line (location: source ID 44, line 56, chars 2126-2144, hits: 9)
+- IC 675 -> Item 154
+- Creation code
+  - Refers to item: Statement (location: source ID 44, line 56, chars 2126-2144, hits: 9)
+- IC 119 -> Item 155
+- Creation code
+  - Refers to item: Function "addConsumerUsingConfig" (location: source ID 44, line 59, chars 2157-2596, hits: 0)
+- IC 777 -> Item 156
+- Creation code
+  - Refers to item: Line (location: source ID 44, line 60, chars 2236-2282, hits: 0)
+- IC 777 -> Item 157
+- Creation code
+  - Refers to item: Statement (location: source ID 44, line 60, chars 2236-2282, hits: 0)
+- IC 779 -> Item 158
+- Creation code
+  - Refers to item: Statement (location: source ID 44, line 60, chars 2264-2282, hits: 0)
+- IC 825 -> Item 159
+- Creation code
+  - Refers to item: Line (location: source ID 44, line 61, chars 2292-2347, hits: 0)
+- IC 825 -> Item 160
+- Creation code
+  - Refers to item: Statement (location: source ID 44, line 61, chars 2292-2347, hits: 0)
+- IC 949 -> Item 161
+- Creation code
+  - Refers to item: Line (location: source ID 44, line 62, chars 2357-2455, hits: 0)
+- IC 949 -> Item 162
+- Creation code
+  - Refers to item: Statement (location: source ID 44, line 62, chars 2357-2455, hits: 0)
+- IC 1073 -> Item 163
+- Creation code
+  - Refers to item: Line (location: source ID 44, line 67, chars 2529-2589, hits: 0)
+- IC 1073 -> Item 164
+- Creation code
+  - Refers to item: Statement (location: source ID 44, line 67, chars 2529-2589, hits: 0)
+- IC 151 -> Item 165
+- Creation code
+  - Refers to item: Function "run" (location: source ID 44, line 70, chars 2602-2825, hits: 0)
+- IC 1092 -> Item 166
+- Creation code
+  - Refers to item: Line (location: source ID 44, line 71, chars 2636-2764, hits: 0)
+- IC 1092 -> Item 167
+- Creation code
+  - Refers to item: Statement (location: source ID 44, line 71, chars 2636-2764, hits: 0)
+- IC 1094 -> Item 168
+- Creation code
+  - Refers to item: Statement (location: source ID 44, line 71, chars 2667-2764, hits: 0)
+- IC 1161 -> Item 169
+- Creation code
+  - Refers to item: Line (location: source ID 44, line 75, chars 2774-2818, hits: 0)
+- IC 1161 -> Item 170
+- Creation code
+  - Refers to item: Statement (location: source ID 44, line 75, chars 2774-2818, hits: 0)
+
+Anchors for Contract "StdUtils" (solc 0.8.19, source ID 27):
+
+Anchors for Contract "Raffle" (solc 0.8.19, source ID 45):
+- IC 6 -> Item 0
+- Runtime code
+  - Refers to item: Function "" (location: source ID 45, line 75, chars 2095-2771, hits: 9)
+- IC 482 -> Item 1
+- Runtime code
+  - Refers to item: Line (location: source ID 45, line 83, chars 2353-2372, hits: 9)
+- IC 482 -> Item 2
+- Runtime code
+  - Refers to item: Statement (location: source ID 45, line 83, chars 2353-2372, hits: 9)
+- IC 490 -> Item 3
+- Runtime code
+  - Refers to item: Line (location: source ID 45, line 84, chars 2382-2403, hits: 9)
+- IC 490 -> Item 4
+- Runtime code
+  - Refers to item: Statement (location: source ID 45, line 84, chars 2382-2403, hits: 9)
+- IC 498 -> Item 5
+- Runtime code
+  - Refers to item: Line (location: source ID 45, line 85, chars 2413-2446, hits: 9)
+- IC 498 -> Item 6
+- Runtime code
+  - Refers to item: Statement (location: source ID 45, line 85, chars 2413-2446, hits: 9)
+- IC 506 -> Item 7
+- Runtime code
+  - Refers to item: Line (location: source ID 45, line 86, chars 2456-2483, hits: 9)
+- IC 506 -> Item 8
+- Runtime code
+  - Refers to item: Statement (location: source ID 45, line 86, chars 2456-2483, hits: 9)
+- IC 515 -> Item 9
+- Runtime code
+  - Refers to item: Line (location: source ID 45, line 87, chars 2493-2525, hits: 9)
+- IC 515 -> Item 10
+- Runtime code
+  - Refers to item: Statement (location: source ID 45, line 87, chars 2493-2525, hits: 9)
+- IC 561 -> Item 11
+- Runtime code
+  - Refers to item: Line (location: source ID 45, line 88, chars 2535-2568, hits: 9)
+- IC 561 -> Item 12
+- Runtime code
+  - Refers to item: Statement (location: source ID 45, line 88, chars 2535-2568, hits: 9)
+- IC 568 -> Item 13
+- Runtime code
+  - Refers to item: Line (location: source ID 45, line 89, chars 2578-2615, hits: 9)
+- IC 568 -> Item 14
+- Runtime code
+  - Refers to item: Statement (location: source ID 45, line 89, chars 2578-2615, hits: 9)
+- IC 397 -> Item 15
+- Creation code
+  - Refers to item: Function "enterRaffle" (location: source ID 45, line 96, chars 2777-3384, hits: 8)
+- IC 1282 -> Item 16
+- Creation code
+  - Refers to item: Line (location: source ID 45, line 99, chars 2979-3004, hits: 8)
+- IC 1282 -> Item 17
+- Creation code
+  - Refers to item: Statement (location: source ID 45, line 99, chars 2979-3004, hits: 8)
+- IC 1322 -> Item 18
+- Creation code
+  - Refers to item: Branch (branch: 0, path: 0) (location: source ID 45, line 99, chars 3006-3069, hits: 1)
+- IC 1322 -> Item 19
+- Creation code
+  - Refers to item: Line (location: source ID 45, line 100, chars 3020-3058, hits: 1)
+- IC 1322 -> Item 20
+- Creation code
+  - Refers to item: Statement (location: source ID 45, line 100, chars 3020-3058, hits: 1)
+- IC 1372 -> Item 21
+- Creation code
+  - Refers to item: Line (location: source ID 45, line 102, chars 3082-3115, hits: 7)
+- IC 1372 -> Item 22
+- Creation code
+  - Refers to item: Statement (location: source ID 45, line 102, chars 3082-3115, hits: 7)
+- IC 1431 -> Item 23
+- Creation code
+  - Refers to item: Branch (branch: 1, path: 0) (location: source ID 45, line 102, chars 3117-3172, hits: 1)
+- IC 1431 -> Item 24
+- Creation code
+  - Refers to item: Line (location: source ID 45, line 103, chars 3131-3161, hits: 1)
+- IC 1431 -> Item 25
+- Creation code
+  - Refers to item: Statement (location: source ID 45, line 103, chars 3131-3161, hits: 1)
+- IC 1481 -> Item 26
+- Creation code
+  - Refers to item: Line (location: source ID 45, line 105, chars 3181-3216, hits: 6)
+- IC 1481 -> Item 27
+- Creation code
+  - Refers to item: Statement (location: source ID 45, line 105, chars 3181-3216, hits: 6)
+- IC 1580 -> Item 28
+- Creation code
+  - Refers to item: Line (location: source ID 45, line 108, chars 3349-3377, hits: 6)
+- IC 1580 -> Item 29
+- Creation code
+  - Refers to item: Statement (location: source ID 45, line 108, chars 3349-3377, hits: 6)
+- IC 577 -> Item 30
+- Creation code
+  - Refers to item: Function "checkUpkeep" (location: source ID 45, line 120, chars 3772-4338, hits: 4)
+- IC 2299 -> Item 31
+- Creation code
+  - Refers to item: Line (location: source ID 45, line 128, chars 3964-4011, hits: 6)
+- IC 2299 -> Item 32
+- Creation code
+  - Refers to item: Statement (location: source ID 45, line 128, chars 3964-4011, hits: 6)
+- IC 2301 -> Item 33
+- Creation code
+  - Refers to item: Statement (location: source ID 45, line 128, chars 3978-4011, hits: 6)
+- IC 2358 -> Item 34
+- Creation code
+  - Refers to item: Line (location: source ID 45, line 129, chars 4021-4089, hits: 6)
+- IC 2358 -> Item 35
+- Creation code
+  - Refers to item: Statement (location: source ID 45, line 129, chars 4021-4089, hits: 6)
+- IC 2410 -> Item 36
+- Creation code
+  - Refers to item: Line (location: source ID 45, line 130, chars 4099-4137, hits: 6)
+- IC 2410 -> Item 37
+- Creation code
+  - Refers to item: Statement (location: source ID 45, line 130, chars 4099-4137, hits: 6)
+- IC 2412 -> Item 38
+- Creation code
+  - Refers to item: Statement (location: source ID 45, line 130, chars 4117-4137, hits: 6)
+- IC 2422 -> Item 39
+- Creation code
+  - Refers to item: Line (location: source ID 45, line 131, chars 4147-4190, hits: 6)
+- IC 2422 -> Item 40
+- Creation code
+  - Refers to item: Statement (location: source ID 45, line 131, chars 4147-4190, hits: 6)
+- IC 2424 -> Item 41
+- Creation code
+  - Refers to item: Statement (location: source ID 45, line 131, chars 4165-4190, hits: 6)
+- IC 2429 -> Item 42
+- Creation code
+  - Refers to item: Line (location: source ID 45, line 132, chars 4200-4265, hits: 6)
+- IC 2429 -> Item 43
+- Creation code
+  - Refers to item: Statement (location: source ID 45, line 132, chars 4200-4265, hits: 6)
+- IC 2459 -> Item 44
+- Creation code
+  - Refers to item: Line (location: source ID 45, line 133, chars 4275-4303, hits: 6)
+- IC 2459 -> Item 45
+- Creation code
+  - Refers to item: Statement (location: source ID 45, line 133, chars 4275-4303, hits: 6)
+- IC 407 -> Item 46
+- Creation code
+  - Refers to item: Function "performUpkeep" (location: source ID 45, line 140, chars 4505-5721, hits: 2)
+- IC 1649 -> Item 47
+- Creation code
+  - Refers to item: Line (location: source ID 45, line 141, chars 4590-4629, hits: 2)
+- IC 1649 -> Item 48
+- Creation code
+  - Refers to item: Statement (location: source ID 45, line 141, chars 4590-4629, hits: 2)
+- IC 1651 -> Item 49
+- Creation code
+  - Refers to item: Statement (location: source ID 45, line 141, chars 4614-4629, hits: 2)
+- IC 1678 -> Item 50
+- Creation code
+  - Refers to item: Line (location: source ID 45, line 143, chars 4698-4711, hits: 2)
+- IC 1678 -> Item 51
+- Creation code
+  - Refers to item: Statement (location: source ID 45, line 143, chars 4698-4711, hits: 2)
+- IC 1683 -> Item 52
+- Creation code
+  - Refers to item: Branch (branch: 2, path: 0) (location: source ID 45, line 143, chars 4713-4895, hits: 0)
+- IC 1683 -> Item 53
+- Creation code
+  - Refers to item: Line (location: source ID 45, line 144, chars 4727-4884, hits: 0)
+- IC 1683 -> Item 54
+- Creation code
+  - Refers to item: Statement (location: source ID 45, line 144, chars 4727-4884, hits: 0)
+- IC 1786 -> Item 55
+- Creation code
+  - Refers to item: Line (location: source ID 45, line 151, chars 4905-4944, hits: 2)
+- IC 1786 -> Item 56
+- Creation code
+  - Refers to item: Statement (location: source ID 45, line 151, chars 4905-4944, hits: 2)
+- IC 1829 -> Item 57
+- Creation code
+  - Refers to item: Line (location: source ID 45, line 154, chars 5017-5629, hits: 2)
+- IC 1829 -> Item 58
+- Creation code
+  - Refers to item: Statement (location: source ID 45, line 154, chars 5017-5629, hits: 2)
+- IC 1831 -> Item 59
+- Creation code
+  - Refers to item: Statement (location: source ID 45, line 154, chars 5037-5629, hits: 2)
+- IC 2174 -> Item 60
+- Creation code
+  - Refers to item: Line (location: source ID 45, line 168, chars 5677-5714, hits: 2)
+- IC 2174 -> Item 61
+- Creation code
+  - Refers to item: Statement (location: source ID 45, line 168, chars 5677-5714, hits: 2)
+- IC 3646 -> Item 62
+- Creation code
+  - Refers to item: Function "fulfillRandomWords" (location: source ID 45, line 175, chars 5853-6715, hits: 0)
+- IC 3647 -> Item 63
+- Creation code
+  - Refers to item: Line (location: source ID 45, line 185, chars 6168-6225, hits: 0)
+- IC 3647 -> Item 64
+- Creation code
+  - Refers to item: Statement (location: source ID 45, line 185, chars 6168-6225, hits: 0)
+- IC 3649 -> Item 65
+- Creation code
+  - Refers to item: Statement (location: source ID 45, line 185, chars 6192-6225, hits: 0)
+- IC 3694 -> Item 66
+- Creation code
+  - Refers to item: Line (location: source ID 45, line 186, chars 6235-6290, hits: 0)
+- IC 3694 -> Item 67
+- Creation code
+  - Refers to item: Statement (location: source ID 45, line 186, chars 6235-6290, hits: 0)
+- IC 3761 -> Item 68
+- Creation code
+  - Refers to item: Line (location: source ID 45, line 187, chars 6300-6329, hits: 0)
+- IC 3761 -> Item 69
+- Creation code
+  - Refers to item: Statement (location: source ID 45, line 187, chars 6300-6329, hits: 0)
+- IC 3826 -> Item 70
+- Creation code
+  - Refers to item: Line (location: source ID 45, line 188, chars 6339-6375, hits: 0)
+- IC 3826 -> Item 71
+- Creation code
+  - Refers to item: Statement (location: source ID 45, line 188, chars 6339-6375, hits: 0)
+- IC 3922 -> Item 72
+- Creation code
+  - Refers to item: Line (location: source ID 45, line 189, chars 6385-6417, hits: 0)
+- IC 3922 -> Item 73
+- Creation code
+  - Refers to item: Statement (location: source ID 45, line 189, chars 6385-6417, hits: 0)
+- IC 3965 -> Item 74
+- Creation code
+  - Refers to item: Line (location: source ID 45, line 190, chars 6427-6460, hits: 0)
+- IC 3965 -> Item 75
+- Creation code
+  - Refers to item: Statement (location: source ID 45, line 190, chars 6427-6460, hits: 0)
+- IC 3972 -> Item 76
+- Creation code
+  - Refers to item: Line (location: source ID 45, line 191, chars 6470-6501, hits: 0)
+- IC 3972 -> Item 77
+- Creation code
+  - Refers to item: Statement (location: source ID 45, line 191, chars 6470-6501, hits: 0)
+- IC 4039 -> Item 78
+- Creation code
+  - Refers to item: Line (location: source ID 45, line 192, chars 6511-6581, hits: 0)
+- IC 4039 -> Item 79
+- Creation code
+  - Refers to item: Statement (location: source ID 45, line 192, chars 6511-6581, hits: 0)
+- IC 4041 -> Item 80
+- Creation code
+  - Refers to item: Statement (location: source ID 45, line 192, chars 6530-6581, hits: 0)
+- IC 4147 -> Item 81
+- Creation code
+  - Refers to item: Line (location: source ID 45, line 194, chars 6643-6651, hits: 0)
+- IC 4147 -> Item 82
+- Creation code
+  - Refers to item: Statement (location: source ID 45, line 194, chars 6643-6651, hits: 0)
+- IC 4152 -> Item 83
+- Creation code
+  - Refers to item: Branch (branch: 3, path: 0) (location: source ID 45, line 194, chars 6653-6709, hits: 0)
+- IC 4152 -> Item 84
+- Creation code
+  - Refers to item: Line (location: source ID 45, line 195, chars 6667-6698, hits: 0)
+- IC 4152 -> Item 85
+- Creation code
+  - Refers to item: Statement (location: source ID 45, line 195, chars 6667-6698, hits: 0)
+- IC 313 -> Item 86
+- Creation code
+  - Refers to item: Function "getRaffleState" (location: source ID 45, line 202, chars 6761-6858, hits: 2)
+- IC 1063 -> Item 87
+- Creation code
+  - Refers to item: Line (location: source ID 45, line 203, chars 6831-6851, hits: 2)
+- IC 1063 -> Item 88
+- Creation code
+  - Refers to item: Statement (location: source ID 45, line 203, chars 6831-6851, hits: 2)
+- IC 491 -> Item 89
+- Creation code
+  - Refers to item: Function "getNumWords" (location: source ID 45, line 206, chars 6864-6950, hits: 0)
+- IC 2271 -> Item 90
+- Creation code
+  - Refers to item: Line (location: source ID 45, line 207, chars 6927-6943, hits: 0)
+- IC 2271 -> Item 91
+- Creation code
+  - Refers to item: Statement (location: source ID 45, line 207, chars 6927-6943, hits: 0)
+- IC 534 -> Item 92
+- Creation code
+  - Refers to item: Function "getRequestConfirmations" (location: source ID 45, line 210, chars 6956-7066, hits: 0)
+- IC 2286 -> Item 93
+- Creation code
+  - Refers to item: Line (location: source ID 45, line 211, chars 7031-7059, hits: 0)
+- IC 2286 -> Item 94
+- Creation code
+  - Refers to item: Statement (location: source ID 45, line 211, chars 7031-7059, hits: 0)
+- IC 448 -> Item 95
+- Creation code
+  - Refers to item: Function "getRecentWinner" (location: source ID 45, line 214, chars 7072-7167, hits: 0)
+- IC 2227 -> Item 96
+- Creation code
+  - Refers to item: Line (location: source ID 45, line 215, chars 7139-7160, hits: 0)
+- IC 2227 -> Item 97
+- Creation code
+  - Refers to item: Statement (location: source ID 45, line 215, chars 7139-7160, hits: 0)
+- IC 875 -> Item 98
+- Creation code
+  - Refers to item: Function "getPlayer" (location: source ID 45, line 218, chars 7173-7277, hits: 1)
+- IC 3544 -> Item 99
+- Creation code
+  - Refers to item: Line (location: source ID 45, line 219, chars 7247-7270, hits: 1)
+- IC 3544 -> Item 100
+- Creation code
+  - Refers to item: Statement (location: source ID 45, line 219, chars 7247-7270, hits: 1)
+- IC 832 -> Item 101
+- Creation code
+  - Refers to item: Function "getLastTimeStamp" (location: source ID 45, line 222, chars 7283-7380, hits: 0)
+- IC 3534 -> Item 102
+- Creation code
+  - Refers to item: Line (location: source ID 45, line 223, chars 7351-7373, hits: 0)
+- IC 3534 -> Item 103
+- Creation code
+  - Refers to item: Statement (location: source ID 45, line 223, chars 7351-7373, hits: 0)
+- IC 746 -> Item 104
+- Creation code
+  - Refers to item: Function "getInterval" (location: source ID 45, line 226, chars 7386-7473, hits: 0)
+- IC 3456 -> Item 105
+- Creation code
+  - Refers to item: Line (location: source ID 45, line 227, chars 7449-7466, hits: 0)
+- IC 3456 -> Item 106
+- Creation code
+  - Refers to item: Statement (location: source ID 45, line 227, chars 7449-7466, hits: 0)
+- IC 270 -> Item 107
+- Creation code
+  - Refers to item: Function "getEntranceFee" (location: source ID 45, line 230, chars 7479-7572, hits: 0)
+- IC 1023 -> Item 108
+- Creation code
+  - Refers to item: Line (location: source ID 45, line 231, chars 7545-7565, hits: 0)
+- IC 1023 -> Item 109
+- Creation code
+  - Refers to item: Statement (location: source ID 45, line 231, chars 7545-7565, hits: 0)
+- IC 977 -> Item 110
+- Creation code
+  - Refers to item: Function "getNumberOfPlayers" (location: source ID 45, line 234, chars 7578-7678, hits: 0)
+- IC 3636 -> Item 111
+- Creation code
+  - Refers to item: Line (location: source ID 45, line 235, chars 7648-7671, hits: 0)
+- IC 3636 -> Item 112
+- Creation code
+  - Refers to item: Statement (location: source ID 45, line 235, chars 7648-7671, hits: 0)
+
+Anchors for Contract "CodeConstants" (solc 0.8.19, source ID 43):
+
+Anchors for Contract "DeployRaffle" (solc 0.8.19, source ID 42):
+- IC 63 -> Item 232
+- Creation code
+  - Refers to item: Function "run" (location: source ID 42, line 10, chars 323-1803, hits: 9)
+- IC 136 -> Item 233
+- Creation code
+  - Refers to item: Line (location: source ID 42, line 11, chars 388-434, hits: 9)
+- IC 136 -> Item 234
+- Creation code
+  - Refers to item: Statement (location: source ID 42, line 11, chars 388-434, hits: 9)
+- IC 138 -> Item 235
+- Creation code
+  - Refers to item: Statement (location: source ID 42, line 11, chars 416-434, hits: 9)
+- IC 184 -> Item 236
+- Creation code
+  - Refers to item: Line (location: source ID 42, line 12, chars 474-517, hits: 9)
+- IC 184 -> Item 237
+- Creation code
+  - Refers to item: Statement (location: source ID 42, line 12, chars 474-517, hits: 9)
+- IC 186 -> Item 238
+- Creation code
+  - Refers to item: Statement (location: source ID 42, line 12, chars 500-517, hits: 9)
+- IC 232 -> Item 239
+- Creation code
+  - Refers to item: Line (location: source ID 42, line 13, chars 527-594, hits: 9)
+- IC 232 -> Item 240
+- Creation code
+  - Refers to item: Statement (location: source ID 42, line 13, chars 527-594, hits: 9)
+- IC 234 -> Item 241
+- Creation code
+  - Refers to item: Statement (location: source ID 42, line 13, chars 570-594, hits: 9)
+- IC 352 -> Item 242
+- Creation code
+  - Refers to item: Line (location: source ID 42, line 15, chars 609-635, hits: 9)
+- IC 352 -> Item 243
+- Creation code
+  - Refers to item: Statement (location: source ID 42, line 15, chars 609-635, hits: 9)
+- IC 365 -> Item 244
+- Creation code
+  - Refers to item: Branch (branch: 0, path: 0) (location: source ID 42, line 15, chars 637-1238, hits: 0)
+- IC 365 -> Item 245
+- Creation code
+  - Refers to item: Line (location: source ID 42, line 16, chars 651-715, hits: 0)
+- IC 365 -> Item 246
+- Creation code
+  - Refers to item: Statement (location: source ID 42, line 16, chars 651-715, hits: 0)
+- IC 367 -> Item 247
+- Creation code
+  - Refers to item: Statement (location: source ID 42, line 16, chars 691-715, hits: 0)
+- IC 413 -> Item 248
+- Creation code
+  - Refers to item: Line (location: source ID 42, line 17, chars 729-922, hits: 0)
+- IC 413 -> Item 249
+- Creation code
+  - Refers to item: Statement (location: source ID 42, line 17, chars 729-922, hits: 0)
+- IC 607 -> Item 250
+- Creation code
+  - Refers to item: Line (location: source ID 42, line 24, chars 937-995, hits: 0)
+- IC 607 -> Item 251
+- Creation code
+  - Refers to item: Statement (location: source ID 42, line 24, chars 937-995, hits: 0)
+- IC 609 -> Item 252
+- Creation code
+  - Refers to item: Statement (location: source ID 42, line 24, chars 973-995, hits: 0)
+- IC 655 -> Item 253
+- Creation code
+  - Refers to item: Line (location: source ID 42, line 25, chars 1009-1167, hits: 0)
+- IC 655 -> Item 254
+- Creation code
+  - Refers to item: Statement (location: source ID 42, line 25, chars 1009-1167, hits: 0)
+- IC 782 -> Item 255
+- Creation code
+  - Refers to item: Line (location: source ID 42, line 31, chars 1182-1227, hits: 0)
+- IC 782 -> Item 256
+- Creation code
+  - Refers to item: Statement (location: source ID 42, line 31, chars 1182-1227, hits: 0)
+- IC 934 -> Item 257
+- Creation code
+  - Refers to item: Line (location: source ID 42, line 34, chars 1248-1267, hits: 9)
+- IC 934 -> Item 258
+- Creation code
+  - Refers to item: Statement (location: source ID 42, line 34, chars 1248-1267, hits: 9)
+- IC 1031 -> Item 259
+- Creation code
+  - Refers to item: Line (location: source ID 42, line 35, chars 1277-1535, hits: 9)
+- IC 1031 -> Item 260
+- Creation code
+  - Refers to item: Statement (location: source ID 42, line 35, chars 1277-1535, hits: 9)
+- IC 1033 -> Item 261
+- Creation code
+  - Refers to item: Statement (location: source ID 42, line 35, chars 1293-1535, hits: 9)
+- IC 1162 -> Item 262
+- Creation code
+  - Refers to item: Line (location: source ID 42, line 43, chars 1545-1563, hits: 9)
+- IC 1162 -> Item 263
+- Creation code
+  - Refers to item: Statement (location: source ID 42, line 43, chars 1545-1563, hits: 9)
+- IC 1259 -> Item 264
+- Creation code
+  - Refers to item: Line (location: source ID 42, line 46, chars 1621-1757, hits: 9)
+- IC 1259 -> Item 265
+- Creation code
+  - Refers to item: Statement (location: source ID 42, line 46, chars 1621-1757, hits: 9)
+- IC 1382 -> Item 266
+- Creation code
+  - Refers to item: Line (location: source ID 42, line 51, chars 1767-1796, hits: 9)
+- IC 1382 -> Item 267
+- Creation code
+  - Refers to item: Statement (location: source ID 42, line 51, chars 1767-1796, hits: 9)
+
+Anchors for Contract "VRFConsumerBaseV2Plus" (solc 0.8.19, source ID 9):
+
+Anchors for Contract "ScriptBase" (solc 0.8.19, source ID 15):
+
+Anchors for Contract "console" (solc 0.8.19, source ID 30):
+
+Anchors for Contract "IOwnable" (solc 0.8.19, source ID 5):
+
+Anchors for Contract "StdChains" (solc 0.8.19, source ID 18):
+
+Anchors for Contract "VRFCoordinatorV2_5Mock" (solc 0.8.19, source ID 14):
+
+Anchors for Contract "safeconsole" (solc 0.8.19, source ID 38):
+

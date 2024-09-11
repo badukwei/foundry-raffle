@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.19;
 
-import { LinkToken } from "../test/mocks/LinkToken.sol";
-import { Script, console2 } from "forge-std/Script.sol";
-import { VRFCoordinatorV2_5Mock } from "@chainlink/contracts/src/v0.8/vrf/mocks/VRFCoordinatorV2_5Mock.sol";
+import {LinkToken} from "../test/mocks/LinkToken.sol";
+import {Script, console} from "forge-std/Script.sol";
+import {VRFCoordinatorV2_5Mock} from "@chainlink/contracts/src/v0.8/vrf/mocks/VRFCoordinatorV2_5Mock.sol";
 
 abstract contract CodeConstants {
     uint96 public MOCK_BASE_FEE = 0.25 ether;
@@ -36,7 +36,7 @@ contract HelperConfig is CodeConstants, Script {
         uint32 callbackGasLimit;
         address vrfCoordinatorV2_5;
         address link;
-        address account;
+        // address account;
     }
 
     /*//////////////////////////////////////////////////////////////
@@ -89,9 +89,9 @@ contract HelperConfig is CodeConstants, Script {
             automationUpdateInterval: 30, // 30 seconds
             raffleEntranceFee: 0.01 ether,
             callbackGasLimit: 500000, // 500,000 gas
-            vrfCoordinatorV2_5: 0x271682DEB8C4E0901D1a1550aD2e64D568E69909,
-            link: 0x514910771AF9Ca656af840dff83E8264EcF986CA,
-            account: 0x643315C9Be056cDEA171F4e7b2222a4ddaB9F88D
+            vrfCoordinatorV2_5: 0xD7f86b4b8Cae7D942340FF628F82735b7a20893a,
+            link: 0x514910771AF9Ca656af840dff83E8264EcF986CA
+            // account: 0x643315C9Be056cDEA171F4e7b2222a4ddaB9F88D
         });
     }
 
@@ -107,8 +107,8 @@ contract HelperConfig is CodeConstants, Script {
             raffleEntranceFee: 0.01 ether,
             callbackGasLimit: 500000, // 500,000 gas
             vrfCoordinatorV2_5: 0x9DdfaCa8183c41ad55329BdeeD9F6A8d53168B1B,
-            link: 0x779877A7B0D9E8603169DdbD7836e478b4624789,
-            account: 0x643315C9Be056cDEA171F4e7b2222a4ddaB9F88D
+            link: 0x779877A7B0D9E8603169DdbD7836e478b4624789
+            // account: 0x643315C9Be056cDEA171F4e7b2222a4ddaB9F88D
         });
     }
 
@@ -118,8 +118,8 @@ contract HelperConfig is CodeConstants, Script {
             return localNetworkConfig;
         }
 
-        console2.log(unicode"⚠️ You have deployed a mock conract!");
-        console2.log("Make sure this was intentional");
+        console.log("!!!!You have deployed a mock conract!!!!");
+        // vm.startBroadcast() and  vm.stopBroadcast() is to simulate the transaction
         vm.startBroadcast();
         VRFCoordinatorV2_5Mock vrfCoordinatorV2_5Mock = new VRFCoordinatorV2_5Mock(
                 MOCK_BASE_FEE,
@@ -132,15 +132,17 @@ contract HelperConfig is CodeConstants, Script {
 
         localNetworkConfig = NetworkConfig({
             subscriptionId: subscriptionId,
+            // gasLane doesn't matter becasue it's mocked
             gasLane: 0x474e34a077df58807dbe9c96d3c009b23b3c6d0cce433e59bbf5b34f823bc56c, // doesn't really matter
             automationUpdateInterval: 30, // 30 seconds
             raffleEntranceFee: 0.01 ether,
             callbackGasLimit: 500000, // 500,000 gas
             vrfCoordinatorV2_5: address(vrfCoordinatorV2_5Mock),
-            link: address(link),
-            account: FOUNDRY_DEFAULT_SENDER
+            link: address(link)
+            // account: FOUNDRY_DEFAULT_SENDER
         });
-        vm.deal(localNetworkConfig.account, 100 ether);
+        //vm.deal() function is used to simulate transferring Ether to a specific address in a testing environment.
+        //vm.deal(localNetworkConfig.account, 100 ether);
         return localNetworkConfig;
     }
 }
