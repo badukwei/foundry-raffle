@@ -36,7 +36,7 @@ contract HelperConfig is CodeConstants, Script {
         uint32 callbackGasLimit;
         address vrfCoordinatorV2_5;
         address link;
-        // address account;
+        address account;
     }
 
     /*//////////////////////////////////////////////////////////////
@@ -90,8 +90,8 @@ contract HelperConfig is CodeConstants, Script {
             raffleEntranceFee: 0.01 ether,
             callbackGasLimit: 500000, // 500,000 gas
             vrfCoordinatorV2_5: 0xD7f86b4b8Cae7D942340FF628F82735b7a20893a,
-            link: 0x514910771AF9Ca656af840dff83E8264EcF986CA
-            // account: 0x643315C9Be056cDEA171F4e7b2222a4ddaB9F88D
+            link: 0x514910771AF9Ca656af840dff83E8264EcF986CA,
+            account: 0x1385EFfC7F848df547D31f8DE5934c81f2413f5D
         });
     }
 
@@ -107,8 +107,8 @@ contract HelperConfig is CodeConstants, Script {
             raffleEntranceFee: 0.01 ether,
             callbackGasLimit: 500000, // 500,000 gas
             vrfCoordinatorV2_5: 0x9DdfaCa8183c41ad55329BdeeD9F6A8d53168B1B,
-            link: 0x779877A7B0D9E8603169DdbD7836e478b4624789
-            // account: 0x643315C9Be056cDEA171F4e7b2222a4ddaB9F88D
+            link: 0x779877A7B0D9E8603169DdbD7836e478b4624789,
+            account: 0x1385EFfC7F848df547D31f8DE5934c81f2413f5D
         });
     }
 
@@ -138,11 +138,11 @@ contract HelperConfig is CodeConstants, Script {
             raffleEntranceFee: 0.01 ether,
             callbackGasLimit: 500000, // 500,000 gas
             vrfCoordinatorV2_5: address(vrfCoordinatorV2_5Mock),
-            link: address(link)
-            // account: FOUNDRY_DEFAULT_SENDER
+            link: address(link),
+            account: FOUNDRY_DEFAULT_SENDER
         });
         //vm.deal() function is used to simulate transferring Ether to a specific address in a testing environment.
-        //vm.deal(localNetworkConfig.account, 100 ether);
+        vm.deal(localNetworkConfig.account, 100 ether);
         return localNetworkConfig;
     }
 }
