@@ -66,6 +66,7 @@ contract HelperConfig is CodeConstants, Script {
         networkConfigs[chainId] = networkConfig;
     }
 
+    // We have to create our subs manually on chainlink then update the subId 
     function getConfigByChainId(
         uint256 chainId
     ) public returns (NetworkConfig memory) {
@@ -84,7 +85,7 @@ contract HelperConfig is CodeConstants, Script {
         returns (NetworkConfig memory mainnetNetworkConfig)
     {
         mainnetNetworkConfig = NetworkConfig({
-            subscriptionId: 0, // If left as 0, our scripts will create one!
+            subscriptionId: 0, // We have to create our subs manually on chainlink then update the subId 
             gasLane: 0x9fe0eebf5e446e3c998ec9bb19951541aee00bb90ea201ae456421a2ded86805,
             automationUpdateInterval: 30, // 30 seconds
             raffleEntranceFee: 0.01 ether,
@@ -101,7 +102,8 @@ contract HelperConfig is CodeConstants, Script {
         returns (NetworkConfig memory sepoliaNetworkConfig)
     {
         sepoliaNetworkConfig = NetworkConfig({
-            subscriptionId: 0, // If left as 0, our scripts will create one!
+            //Issue: https://github.com/Cyfrin/foundry-full-course-cu/discussions/2394.
+            subscriptionId: 48613988677006218664255348080416749235356325076231808523483964173303026656650, // If left as 0, our scripts will create one! (It will fail. Check the link for the issue.)
             gasLane: 0x787d74caea10b2b357790d5b5247c2f63d1d91572a9846f780606e4d953677ae,
             automationUpdateInterval: 30, // 30 seconds
             raffleEntranceFee: 0.01 ether,
